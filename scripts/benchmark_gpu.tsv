@@ -1,4 +1,4 @@
-Replicate	Date_time	Parameter	Meassure	Meassure_unit
+Replicate	Date_time	Parameter	Measure	Measure_unit
 1	2023-10-08 01:14:34.159	frequency	2805	MHz
 1	2023-10-08 01:14:34.159	utilization	17	percent
 1	2023-10-08 01:14:34.159	package_power	70.48	W
