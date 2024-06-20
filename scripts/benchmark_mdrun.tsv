@@ -1,0 +1,6 @@
+Protein_name	Replicate	CPU_time_s	Wall_time_s	CPU_usage_pct	ns/day	hours/ns
+P_alpha_beta_2_1a6j	1	156.127	13.013	1199.8	265.594	0.090
+P_alpha_beta_2_1a6j	2	155.928	12.997	1199.8	265.929	0.090
+P_alpha_beta_2_1a6j	3	179.330	14.946	1199.8	231.240	0.104
+P_alpha_beta_2_1a6j	4	156.386	13.035	1199.8	265.155	0.091
+P_alpha_beta_2_1a6j	5	155.806	12.986	1199.8	266.141	0.090
