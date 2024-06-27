@@ -206,7 +206,7 @@
 	}
 	
 		
-	## Calcula the sample standard deviation of all the values stored in an array:
+	## Calculate the sample standard deviation of all the values stored in an array:
 	std_dev_sample() {
 		# It should be called as `std_dev_sample "${my_array[@]}"`
 		local values=("$@")  # Capture all arguments as an array
