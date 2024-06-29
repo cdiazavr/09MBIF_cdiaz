@@ -41,7 +41,7 @@
 		echo -e "\nUSAGE: $0 [-h] [-t] [-p protein] [-b {time_energy|time}] [-s steps] [-r replicates] [-c custom_params] [-g]"
 		echo -e "\nOPTIONS:"
 		echo    "  -h                       Show this help."	    
-		echo    "  -t                       Run only on console (do not launch GUI)."
+		echo    "  -t                       Run only in command line (do not launch GUI)."
 		echo    "  -p protein               Path of the protein file to be simulated (PDB format)."
 		echo    "  -b {time_energy|time}    time_energy : benchmarks both time performance and energy consumption."
 		echo    "                           time : benchmarks only time performance."
@@ -54,8 +54,9 @@
 		echo    "  -g                       Preserve the intermediate files created during the simulations."
 		echo -e "\nNOTE: if the option -t is specified, then the following parameters are mandatory:"
 		echo    "      [-p protein] [-b {time_energy|time}] [-s steps] [-r replicates]"
-		echo -e "\n      The following parameters are optional: [-c custom_params] [-i] [-f] [-g]"
-		echo    "      (if any of these is not specified, these will be set to false)"
+		echo -e "\n      The following parameters are optional:"
+		echo    "      [-c custom_params] defaults to no custom parameters."
+		echo    "      [-g]               defaults to not preserving intermediate GROMACS files."
 	}
 
 	
@@ -206,7 +207,7 @@
 	}
 	
 		
-	## Calculate the sample standard deviation of all the values stored in an array:
+	## Calcula the sample standard deviation of all the values stored in an array:
 	std_dev_sample() {
 		# It should be called as `std_dev_sample "${my_array[@]}"`
 		local values=("$@")  # Capture all arguments as an array
